@@ -32,7 +32,7 @@ Proin laoreet blandit dictum. Nam euismod magna non ligula euismod, sed congue n
 <div id="navmeta">
     <div id="nav">
      <ul>
-      <li><span class="fakelink">Home</span></li>
+      <li><a href="./">Home</a></li>
       
  <li>
 <a href="./matt">Matt Stats</a>
@@ -66,5 +66,21 @@ Proin laoreet blandit dictum. Nam euismod magna non ligula euismod, sed congue n
 <a href="./afterthoughts">Afterthoughts</a>
  </li>
 
+     </ul>
+
+
+     <form class="stysw" method="post" action="./copyright">
+      <p>
+       <label for="sel-colscheme">Colors:</label>
+       <select id="sel-colscheme" name="colscheme" onchange="ssel_onchange(this);"><option value="normal" selected="selected">Normal</option><option value="dark">Dark</option><option value="light">Light</option></select>
+       <input type="submit" value="Change" id="colschsub">
+      </p>
+     </form>
+
+    </div>
+    <div id="navsub">
+     
+    </div>
+   </div>
 	
 </html>

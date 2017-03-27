@@ -1,2 +1,212 @@
+/*
+ * Main pages stylesheet
+ */
 
-TESTING!!!!!!!
+/*
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+*/
+
+/* Generic overrides */
+/* Links, pseudo-links, and link-like titles */
+a, span.fakelink, span.fltitle {
+	text-decoration:	none;
+	font-weight:		bold;
+	font-variant:		small-caps;
+	color:				#CCCCFF;
+	background-color:	transparent;
+}
+span.fltitle {
+	color:				#CCCCCC;
+}
+a:visited {
+	color:				#999900;
+}
+a:hover {
+	color:				#FF0000;
+	text-decoration:	underline;
+}
+
+body {
+	color:				#66FFFF;
+	background-color:	#555555;
+	line-height:		1.3em;
+}
+
+img {
+	border:				0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin:				1.25em 0 0 0;
+	font-variant:		small-caps;
+	line-height:		1.1em;
+}
+h1     { font-size: 2em; margin:    .6em 0; }
+h2     { font-size: 1.75em; }
+h3     { font-size: 1.5em;  }
+h4     { font-size: 1.33em; }
+h5, h6 { font-size: 1.25em; }
+
+p {
+	text-indent:		1em;
+}
+p.noindent {
+	text-indent:		0;
+}
+dd p {
+	margin-top:			.2em;
+}
+
+form.stysw {
+	margin-left:		1.5em;
+}
+form.stysw p {
+	text-indent:		0;
+	margin:				.1em 0;
+}
+
+/* Div's */
+/* Header */
+#header {
+	clear:				both;
+	text-align:			center;
+	border-width:		4px;
+	border-color:		black;
+	border-style:		inset;
+}
+
+/* Main page section */
+#main {
+	width:				100%;
+}
+
+/* Content wrapper */
+#cwrap {
+	float:				left;
+	width:				67%;
+}
+
+/* Page content */
+#content {
+	padding:			10px 5% 0 5%;
+	border-right:		3px black groove;
+	line-height:		1.5em;
+}
+
+/* Nav bar meta-box */
+#navmeta {
+	float:				right;
+	width:				33%;
+	text-align:			center;
+}
+
+/* Nav bar */
+#nav {
+	font-size:			1.25em;
+	padding:			10px 10px 10px 0;
+	text-align:			left;
+	background-color: 	#336666;
+}
+
+#nav ul {
+	color:				#FFFFFF;
+}
+#nav ul ul {
+	font-size:			.8em; /* 1 lev down: #nav 1.25 * .8 = 1.0 */
+}
+#nav ul ul ul {
+	font-size:			.9em; /* 2 levs down: 1.0 * .9 = .9 */
+}
+#nav ul ul ul ul {
+	font-size:			1em; /* No more shrink */
+}
+
+/* Stuff below the navbar, if any */
+#navsub {
+	border-top:			4px black groove;
+	padding:			10px 10px 0px 10px;
+}
+#navsub p { text-indent: 0; }
+
+/* Footer bits */
+#footer {
+	clear:				both;
+	text-align:			center;
+	padding:			2em 0 0 0;
+}
+
+/* Extra classes for various things */
+/* Centered paragraph */
+.center {
+	text-align:			center;
+}
+
+/* Stuff for Rants pages */
+/* Rant summary paragraph */
+.rantsummary {
+	font-weight:		bold;
+	text-align:			left;
+}
+
+/* Footer paragraphs */
+#footer p {
+	text-indent:		0;
+	font-size:			.8em;
+	padding:			.1em 0;
+	margin:				0;
+}
+
+/* Nav lists */
+#nav ul {
+	margin-left:		1.5em;
+	padding-left:		0;
+}
+
+#nav ul ul {
+	margin-left:		1em;
+	padding-left:		0;
+}
+
+#nav ul ol {
+	margin-left:		1.5em;
+	padding-left:		0;
+}
+
+
+/*
+ * Inline lists.
+ * Idea taken from a few A List Apart articles, and then munged and
+ * beaten and whipped and slathered all out of recognition.
+ */
+ul.inline {
+	padding:			.1em 0 .5em 0;
+	margin:				0;
+}
+
+ul.inline li {
+	padding:			1px 2px;
+	border:				1px dotted #66FFFF;
+	margin:				0;
+	list-style:			none;
+	display:			inline;
+	line-height:		1.6em;
+}
+
+
+/*
+ * Pull down the nav menu to the bottom on sufficiently narrow windows
+ */
+@media all and (max-width: 800px) {
+	#cwrap {
+		width: 99%;
+	}
+	#content {
+		border-right: 0;
+	}
+	#navmeta {
+		width: 99%;
+		clear: both;
+	}
+}

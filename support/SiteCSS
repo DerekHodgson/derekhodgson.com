@@ -18,7 +18,7 @@ a, span.fakelink, span.fltitle {
 	background-color:	transparent;
 }
 span.fltitle {
-	color:				#CCCCCC;
+	color:				#B2ABA9;
 }
 a:visited {
 	color:				#999900;

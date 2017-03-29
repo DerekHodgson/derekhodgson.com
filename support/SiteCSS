@@ -14,14 +14,14 @@ a, span.fakelink, span.fltitle {
 	text-decoration:	none;
 	font-weight:		bold;
 	font-variant:		small-caps;
-	color:				#CCCCFF;
+	color:				#0000FF;
 	background-color:	transparent;
 }
 span.fltitle {
 	color:				#B2ABA9;
 }
 a:visited {
-	color:				#999900;
+	color:				#00FFFF;
 }
 a:hover {
 	color:				#FF0000;

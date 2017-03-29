@@ -30,7 +30,7 @@ a:hover {
 
 body {
 	color:				#000000;
-	background-color:	#B2ABA9;
+	background-color:	#DDDDDD;
 	line-height:		1.3em;
 }
 

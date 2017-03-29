@@ -14,7 +14,7 @@ a, span.fakelink, span.fltitle {
 	text-decoration:	none;
 	font-weight:		bold;
 	font-variant:		small-caps;
-	color:				#0000FF;
+	color:				#000FFF;
 	background-color:	transparent;
 }
 span.fltitle {

@@ -86,7 +86,6 @@ form.stysw p {
 #cwrap {
 	float:				left;
 	width:				80%;
-	height:				100%;
 }
 
 /* Page content */
@@ -94,6 +93,7 @@ form.stysw p {
 	padding:		10px 5% 0 5%;
 	border-right:		3px black groove;
 	line-height:		1.5em;
+	min-height: 		650px;
 	
 }
 

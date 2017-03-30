@@ -27,11 +27,15 @@
    <div id="cwrap">
     <div id="content">
 
-    <h3><a href="/project/flavor-bible-network">The Flavor Bible Network</a></h3>
-	<p>
+    <h4><a href="/project/flavor-bible-network">The Flavor Bible Network</a></h4>
+  <p>
   Use a Shiny App to explore a web of flavors. See what flavor combinations can be found.
   </p>
 
+<h4><a href="/project/scraping-allrecipes">Scraping AllRecipes</a></h4>
+<p>
+ Two web scraping scripts to extract the ingredient information from every recipe on AllRecipes.
+</p>
 
 
 

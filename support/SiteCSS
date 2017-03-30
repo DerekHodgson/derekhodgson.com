@@ -98,7 +98,7 @@ form.stysw p {
 /* Nav bar meta-box */
 #navmeta {
 	float:				right;
-	width:				33%;
+	width:				20%;
 	text-align:			center;
 }
 

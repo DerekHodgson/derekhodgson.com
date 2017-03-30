@@ -29,15 +29,15 @@
 
     <h2>Flavor Bible Network</h2>
 	<p>
-  The below is a Shiny Application that runs on the same AWS EC2 instance that is hosting this website. Here is the <a href="/:3838/flavor/">full version</a> of the app that isn't constrained by the WordPress theme.  You get much bigger and easier to read plots that way. In a future post I'll explain how I got from The Flavor Bible eBook to this Shiny app.	
+  The below is a <a href="https://shiny.rstudio.com/">Shiny Application</a> that runs on the same <a href="linode.com">Linode Server</a> that is hosting this website. Here is the <a href="/:3838/flavor/">full version</a> of the app that isn't constrained by the rest of the page.  You get much bigger and easier to read plots that way. In a future post I'll explain how I got from <a href="http://www.karenandandrew.com/books/the-flavor-bible/">The Flavor Bible</a> eBook to this Shiny app.	
   </p>
 	<p>
-	To use the App, use the drop down menu of flavors to select one that  you want to add to the list of flavors in the intersection by using the "+" button. The flavors currently in the chosen flavors will appear below the menu separated by vertical bars '|'. The flavors in the intersection (that are linked to all of those selected) are displayed with the degree (number of edges connected) in the subgraph. Keep in mind that the connections between the selected flavors and the ones in the graph are not shown. Each one selected would be connected to every point on the graph.
+	To use the App, use the drop down menu of flavors to select one that  you want to add to the list of flavors in the intersection by using the "+" button. The flavors currently in the chosen flavors will appear below the menu separated by vertical bars '|'. The flavors in the intersection (that are linked to all of those selected) are displayed with the degree (number of edges connected) in the subgraph. Keep in mind that the connections between the selected flavors and the ones in the graph are not shown. Each one selected would be connected to every point on the graph. To make things easier, you can click into the drop down menu and type to search, then click to select, and finally "+" to add to the list. To remove an item from the list, click "-". To view the plot or the sortable list of flavors, just check the boxes.
 	</p>
 	<p>
 &nbsp;
 
-<iframe class="scale65" style="margin-bottom: -10px;" src="http://quaere-verum.com:3838/flavor/" width="800px" height="1000px" frameborder="no"></iframe>
+<iframe class="scale65" style="margin-bottom: -10px;" src="http://quaere-verum.com:3838/flavor/" width="1350px" height="1000px" frameborder="1"></iframe>
   </p>
 	
   

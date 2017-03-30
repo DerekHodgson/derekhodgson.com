@@ -1,0 +1,131 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+	"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+ <head>
+  <title>Derek Hodgson</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="start" title="Derek's Homepage" href="./">
+  <link rel="author" title="Derek's Email" href="mailto:derek.a.hodgson@gmail.com">
+  <link rel="shortcut icon" href="./pic/mdf.ico">
+  <!--
+  <link rel='stylesheet' type='text/css'
+    href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700">
+    -->
+  <link rel="stylesheet" type="text/css" media="all" id="sslink"
+
+    href="/support/SiteCSS">
+
+  <link rel="stylesheet" type="text/css" media="print"
+    href="./print.css">
+<body>
+  <div id="header">
+   <h1>Derek Hodgson -- Data Manipulation, Visualization, and Analysis with R and Python</h1>
+  </div>
+
+  <div id="main">
+   <div id="cwrap">
+    <div id="content">
+
+    <h2>Flavor Bible Network</h2>
+
+	
+  <p>
+I needed a larger context to analyze the data I got from <em><a href="http://www.karenandandrew.com/books/the-flavor-bible/">The Flavor Bible</a></em>. My <a href="http://quaere-verum.com:3838/flavor/">previous work</a> on the data I wrangled from the text doesn't quite count as analysis, as it is just a visualizing tool for users to find their own flavor combinations. One way I hope to analyze the information is how well the flavor combinations line up with the ratings on <a href="http://AllRecipes.com">AllRecipes</a>.
+</p>
+<p>
+I know that I'm going to run into several problems with this line of analysis. Many poorly rated recipes are not rated badly because of their choice of ingredients, but rather the many other things that can ruin a dish: <a href="http://ruhlman.com/2009/04/ratio-the-simpl/">wrong ratio of ingredients</a>, <a href="https://chefsilvia.com/choosing-the-right-cooking-method/">incorrect cooking method</a>, <a href="http://www.popsci.com/texture-food-science">poor texture</a>, among many other things. The flavor combinations are a (very important) piece of the puzzle in making a good dish.
+</p>
+<p>
+I first looked at the AllRecipes' <a href="http://allrecipes.com/robots.txt">robot.txt</a> to make sure that my automated scrape was within how crawlers should behave on their site. The crawl-delay is only .05 seconds (1200 requests per minute), so I didn't need to worry about too many requests, and the area I wanted to scrape (<a href="http://allrecipes.com/recipes/">/recipes</a>) was not on their disallow list. My first thought was to use their <a href="http://allrecipes.com/gsindex.xml">sitemap</a> to get the list of recipe URLs, but the number of URLs in the sitemap did not match the number of recipes (53699 as of January 2017), and a number of them got 404 errors. <a href="https://github.com/DerekHodgson/Scraping-AllRecipes/blob/master/scrapeURLs.py">ScrapeURLs.py</a> uses the sort recipes function of AllRecipes' website to get the URL of every publicly accessible recipe on the site. <a href="https://github.com/DerekHodgson/Scraping-AllRecipes/blob/master/scrape.py">Scrape.py</a> downloads the recipe page, uses Beautiful Soup to extract the relevant information (title, rating, number of reviews, ingredient list, and ingredient IDs), and exports the result as a JSON file. I'm much more familiar with R, so exporting to a standard format like JSON is a good way to transfer data between languages while preserving data structure.
+</p>
+<p>
+Next, I'll be stripping the extraneous information from the ingredient lists using a modified version of <a href="https://github.com/DerekHodgson/food2forkCleaning-Analysis/blob/master/data%20cleaning.R">data cleaning.R</a>, which I used for another similar project. It uses Regular Expressions to <a href="https://github.com/DerekHodgson/food2forkCleaning-Analysis/blob/master/removeRegex.R">delete the portion of strings</a> that are in the way of matching the ingredients to one another.
+</p>
+<p>
+Once in R, the scrapings take this form (one row is shown). 
+<table>
+<tbody>
+<tr>
+<th>Reviews</th>
+<th>Recipe Title</th>
+<th>Rating</th>
+<th>Ingredient List</th>
+<th>Ingredient IDs</th>
+<th>Recipe URL</th>
+</tr>
+<tr>
+<td>11</td>
+<td>Mango Coconut Sauce</td>
+<td>4.67</td>
+<td>c("2 mangoes, peeled, pitted, and cut into 1-inch chunks", "3/4 cup coconut milk", "3/4 cup heavy cream", "2 tablespoons fresh lime juice")</td>
+<td>c("5121", "3795", "16258", "5112")</td>
+<td>http://www.allrecipes.com/recipe/146314/mango-coconut-sauce/</td>
+</tr>
+</tbody>
+</table>
+&nbsp;
+</p>
+  
+    </div>
+   </div>
+<div id="navmeta">
+    <div id="nav">
+     <ul>
+      <li><a href="/">Home</a></li>
+      
+ <li>
+<a href="/resume">Derek's Resume</a>
+ </li>
+
+ <li>
+<a href="/links">Links</a>
+ </li>
+
+ <li>
+<a href="/projects">Derek's Projects</a>
+ </li>
+
+ <li>
+<a href="/about">About This Page</a>
+ </li>
+
+     </ul>
+
+<!--
+     <form class="stysw" method="post" action="./copyright">
+      <p>
+       <label for="sel-colscheme">Colors:</label>
+       <select id="sel-colscheme" name="colscheme" onchange="ssel_onchange(this);"><option value="normal" selected="selected">Normal</option><option value="dark">Dark</option><option value="light">Light</option></select>
+       <input type="submit" value="Change" id="colschsub">
+      </p>
+     </form>
+-->
+	    
+    </div>
+    <div id="navsub">
+     
+    </div>
+   </div>
+  </div>
+
+  
+<!--
+  <div id="footer">
+   <ul class="inline">
+    <li><a href="https://www.freebsd.org/">Powered&nbsp;by&nbsp;FreeBSD</a></li>
+    <li><a href="https://www.perl.org/">Powered&nbsp;by&nbsp;Perl</a></li>
+    <li><a href="http://thomer.com/vi/vi.html">Vi&nbsp;Powered</a></li>
+   </ul>
+   <ul class="inline">
+    <li><a href="https://www.w3.org/WAI/WCAG1A-Conformance">W3C-WCAG&nbsp;A</a></li>
+    <li><a href="https://validator.w3.org/check/referer">Valid&nbsp;HTML&nbsp;4.01</a></li>
+    <li><a href="https://jigsaw.w3.org/css-validator/check/referer">Valid&nbsp;CSS</a></li>
+   </ul>
+  </div>
+-->
+
+
+
+ </body>
+</html>

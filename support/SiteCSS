@@ -94,7 +94,7 @@ form.stysw p {
 	border-right:		3px black groove;
 	line-height:		1.5em;
 	min-height: 		650px;
-	
+	height:			auto;	
 }
 
 /* Nav bar meta-box */

@@ -1,0 +1,106 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+	"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+ <head>
+  <title>Derek Hodgson</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="start" title="Derek's Homepage" href="./">
+  <link rel="author" title="Derek's Email" href="mailto:derek.a.hodgson@gmail.com">
+  <link rel="shortcut icon" href="./pic/mdf.ico">
+  <!--
+  <link rel='stylesheet' type='text/css'
+    href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700">
+    -->
+  <link rel="stylesheet" type="text/css" media="all" id="sslink"
+
+    href="support/SiteCSS">
+
+  <link rel="stylesheet" type="text/css" media="print"
+    href="./print.css">
+<body>
+  <div id="header">
+   <h1>Derek Hodgson -- Data Manipulation, Visualization, and Analysis with R and Python</h1>
+  </div>
+
+  <div id="main">
+   <div id="cwrap">
+    <div id="content">
+
+    <h2>Flavor Bible Network</h2>
+	<p>
+  The below is a Shiny Application that runs on the same AWS EC2 instance that is hosting this website. Here is the <a href="/:3838/flavor/">full version</a> of the app that isn't constrained by the WordPress theme.  You get much bigger and easier to read plots that way. In a future post I'll explain how I got from The Flavor Bible eBook to this Shiny app.	
+  </p>
+	<p>
+	To use the App, use the drop down menu of flavors to select one that  you want to add to the list of flavors in the intersection by using the "+" button. The flavors currently in the chosen flavors will appear below the menu separated by vertical bars '|'. The flavors in the intersection (that are linked to all of those selected) are displayed with the degree (number of edges connected) in the subgraph. Keep in mind that the connections between the selected flavors and the ones in the graph are not shown. Each one selected would be connected to every point on the graph.
+	</p>
+	<p>
+&nbsp;
+
+<iframe class="scale65" style="margin-bottom: -10px;" src="http://quaere-verum.com:3838/flavor/" width="800px" height="1000px" frameborder="no"></iframe>
+  </p>
+	
+  
+  
+    </div>
+   </div>
+<div id="navmeta">
+    <div id="nav">
+     <ul>
+      <li><a href="./">Home</a></li>
+      
+ <li>
+<a href="./resume">Derek's Resume</a>
+ </li>
+
+ <li>
+<a href="./links">Links</a>
+ </li>
+
+ <li>
+<a href="./projects">Derek's Projects</a>
+ </li>
+
+ <li>
+<a href="./about">About This Page</a>
+ </li>
+
+     </ul>
+
+<!--
+     <form class="stysw" method="post" action="./copyright">
+      <p>
+       <label for="sel-colscheme">Colors:</label>
+       <select id="sel-colscheme" name="colscheme" onchange="ssel_onchange(this);"><option value="normal" selected="selected">Normal</option><option value="dark">Dark</option><option value="light">Light</option></select>
+       <input type="submit" value="Change" id="colschsub">
+      </p>
+     </form>
+-->
+	    
+    </div>
+    <div id="navsub">
+     
+    </div>
+   </div>
+  </div>
+
+  
+<!--
+  <div id="footer">
+   <ul class="inline">
+    <li><a href="https://www.freebsd.org/">Powered&nbsp;by&nbsp;FreeBSD</a></li>
+    <li><a href="https://www.perl.org/">Powered&nbsp;by&nbsp;Perl</a></li>
+    <li><a href="http://thomer.com/vi/vi.html">Vi&nbsp;Powered</a></li>
+   </ul>
+   <ul class="inline">
+    <li><a href="https://www.w3.org/WAI/WCAG1A-Conformance">W3C-WCAG&nbsp;A</a></li>
+    <li><a href="https://validator.w3.org/check/referer">Valid&nbsp;HTML&nbsp;4.01</a></li>
+    <li><a href="https://jigsaw.w3.org/css-validator/check/referer">Valid&nbsp;CSS</a></li>
+   </ul>
+  </div>
+-->
+
+
+
+ </body>
+</html>

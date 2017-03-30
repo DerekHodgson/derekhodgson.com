@@ -14,7 +14,7 @@
     -->
   <link rel="stylesheet" type="text/css" media="all" id="sslink"
 
-    href="support/SiteCSS">
+    href="/support/SiteCSS">
 
   <link rel="stylesheet" type="text/css" media="print"
     href="./print.css">
@@ -49,22 +49,22 @@
 <div id="navmeta">
     <div id="nav">
      <ul>
-      <li><a href="./">Home</a></li>
+      <li><a href="/">Home</a></li>
       
  <li>
-<a href="./resume">Derek's Resume</a>
+<a href="/resume">Derek's Resume</a>
  </li>
 
  <li>
-<a href="./links">Links</a>
+<a href="/links">Links</a>
  </li>
 
  <li>
-<a href="./projects">Derek's Projects</a>
+<a href="/projects">Derek's Projects</a>
  </li>
 
  <li>
-<a href="./about">About This Page</a>
+<a href="/about">About This Page</a>
  </li>
 
      </ul>

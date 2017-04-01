@@ -3,6 +3,11 @@
  */
 
 /*
+ * This CSS was modified from https://www.over-yonder.net/~fullermd/
+ * The HTML structure is also from https://www.over-yonder.net/~fullermd/
+ * https://www.over-yonder.net/~fullermd/copyright
+ * Used with permission. I also emailed.
+/*
 body {
 	font-family: 'Open Sans', sans-serif;
 }
@@ -179,8 +184,6 @@ form.stysw p {
 
 /*
  * Inline lists.
- * Idea taken from a few A List Apart articles, and then munged and
- * beaten and whipped and slathered all out of recognition.
  */
 ul.inline {
 	padding:			.1em 0 .5em 0;

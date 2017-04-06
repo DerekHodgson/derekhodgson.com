@@ -37,9 +37,13 @@
   <h2>Derek's Resume</h2>
   	<h4>Education</h4>
 	<p>
-		The College of New Jersey -- B.A. in Mathematics / Statistics -- 2017 (prospective)
+		<h5>The College of New Jersey -- B.A. in Mathematics / Statistics -- 2017 (prospective)</h5>
 	</p>
-	
+		<h5>Relevant Coursework:</h5>
+		  <ul>
+		    <li>Data Mining</li>
+		    <li>Multivariate Statistics</li>
+		    
 
 
     </div>

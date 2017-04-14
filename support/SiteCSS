@@ -34,7 +34,7 @@ a:hover {
 }
 
 body {
-	color:				#444;
+	color:				#333;
 	background-color:	#f0efef;
 	line-height:		1.3em;
 }
@@ -78,7 +78,7 @@ form.stysw p {
 	clear:				both;
 	text-align:			center;
 	border-width:		4px;
-	border-color:		#444;
+	border-color:		black;
 	border-style:		inset;
 }
 
@@ -96,7 +96,7 @@ form.stysw p {
 /* Page content */
 #content {
 	padding:		10px 5% 0 5%;
-	border-right:		3px #444 groove;
+	border-right:		3px black groove;
 	line-height:		1.5em;
 	min-height: 		650px;
 	height:			auto;	
@@ -132,7 +132,7 @@ form.stysw p {
 
 /* Stuff below the navbar, if any */
 #navsub {
-	border-top:			4px #444 groove;
+	border-top:			4px black groove;
 	padding:			10px 10px 0px 10px;
 }
 #navsub p { text-indent: 0; }

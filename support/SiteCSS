@@ -78,7 +78,7 @@ form.stysw p {
 	clear:				both;
 	text-align:			center;
 	border-width:		4px;
-	border-color:		black;
+	border-color:		#444;
 	border-style:		inset;
 }
 
@@ -96,7 +96,7 @@ form.stysw p {
 /* Page content */
 #content {
 	padding:		10px 5% 0 5%;
-	border-right:		3px black groove;
+	border-right:		3px #444 groove;
 	line-height:		1.5em;
 	min-height: 		650px;
 	height:			auto;	

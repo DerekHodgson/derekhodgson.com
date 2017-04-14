@@ -34,8 +34,8 @@ a:hover {
 }
 
 body {
-	color:				#000000;
-	background-color:	#DDDDDD;
+	color:				#444;
+	background-color:	#f0efef;
 	line-height:		1.3em;
 }
 

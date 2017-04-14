@@ -132,7 +132,7 @@ form.stysw p {
 
 /* Stuff below the navbar, if any */
 #navsub {
-	border-top:			4px black groove;
+	border-top:			4px #444 groove;
 	padding:			10px 10px 0px 10px;
 }
 #navsub p { text-indent: 0; }
